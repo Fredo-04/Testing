@@ -5,7 +5,7 @@ def isPrime(number):
         return True 
     if number<=1 or (number%2)==0: 
         return False 
-    for check in range(3,int(math.sqrt(number))):   
+    for check in range(3,int(math.sqrt(number))):    #error, debe ser 1 en lugar de 3 para corroborar correctamente
         if (number%check) == 0:   
             return False 
     return True 
